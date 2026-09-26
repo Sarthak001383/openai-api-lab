@@ -8,7 +8,7 @@ client = genai.Client(
     api_key=os.getenv("GEMINI_API_KEY")
 )
 
-user_prompt = input("Enter your prompt: ")
+user_prompt = input("Enter your AI prompt: ")
 
 response = client.models.generate_content(
     model="gemini-3.6-flash",
